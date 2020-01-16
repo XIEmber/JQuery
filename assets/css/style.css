@@ -1,14 +1,27 @@
 @import url("reset.css");
 p{
   text-align: Center;
-  font-size: 45px;
+  font-size: 50px;
   font-family: Impact;
-  color:cyan;
+  color:pink;
+  animation: Blink 0.1s infinite;
 }
 span{
-  color:orange;
+  color:pink;
+  cursor:crosshair;
 }
 body{
-  background-image:url(homer.gif);
-  background-size: cover;
+  background-image:url("https://www.panicstudio.tv/assets-user/projects/69/290/Planet_Website.gif");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+button{
+background-color:pink;
+width:49%;
+margin-left: 10px;
+color: white;
+font-size: 25px;
+border-radius: 2em;
+text-decoration: none;
 }

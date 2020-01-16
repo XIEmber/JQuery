@@ -4,19 +4,22 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <meta charset="utf-8">
     <title>Le Site de JQuery</title>
-    <script src="./assets/js/Jquery.js">
-    </script>
+    <script src="./assets/js/Jquery.js"></script>
+    <script src="./assets/js/jquery-ui.js"></script>
   </head>
   <body>
     <script>
       $(document).ready(function() {
-        $("span").click(function() {
-            $(this).hide();
+        $("#cacher").click(function() {
+          $("p").fadeOut(4000);
+        });
+        $("#afficher").click(function(){
+          $("p").fadeIn(2000);
         })
       });
     </script>
-    <p id="machin">Ouuuuuuuuuuuuh<span> j'adore</span></p>
-    <p id="truc">Ouh là là <span>là là</span></p>
-    <p id="bidule">Oh oui touche moi <span>la poutine</span></p>
+      <p>Hello je suis le soleil</p>
+    <button id="afficher">Afficher</button>
+    <button id="cacher">Cacher</button>
   </body>
 </html>
