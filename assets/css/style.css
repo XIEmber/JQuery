@@ -1,10 +1,15 @@
 @import url("reset.css");
 p{
   text-align: Center;
+  font-size: 25px;
+  font-family: Impact;
+  color:pink;
+}
+h1{
+  text-align: Center;
   font-size: 50px;
   font-family: Impact;
   color:pink;
-  animation: Blink 0.1s infinite;
 }
 span{
   color:pink;
