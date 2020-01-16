@@ -3,18 +3,29 @@
   <head>
     <link rel="stylesheet" href="./assets/css/style.css">
     <meta charset="utf-8">
-    <title>Le Site de JQuery</title>
+    <title>Gay Website</title>
     <script src="./assets/js/Jquery.js"></script>
     <script src="./assets/js/jquery-ui.js"></script>
     <script>
-      $(document).ready(function() {
-      $("ul.menu ul.sousmenu").hide();
-      $("ul.menu ul.sousmenu span").each(function() {
-        $(this).replaceWith('<a href="" title="Afficher">'
-          + $(this).text()
-          + '</a>');
-      })
-    });
+    $(document).ready(function () {
+            $(".sousmenu").hide();
+            $("span").each(function () {
+                $(this).replaceWith('<a href="#" title="Afficher">' + $(this).text() + '</a>');
+            });
+            $(".switchmenu > a").click(function () {
+                if ($(this).next(".sousmenu:visible").length != 0) {
+                    $(this).next(".sousmenu").slideUp("normal");
+
+                } else {
+                    $(".sousmenu").slideUp("normal");
+                    $(this).next(".sousmenu").slideDown("normal");
+
+                }
+                return false;
+            });
+
+
+        });
     </script>
   </head>
 <header>
