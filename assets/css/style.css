@@ -1,0 +1,14 @@
+@import url("reset.css");
+p{
+  text-align: Center;
+  font-size: 45px;
+  font-family: Impact;
+  color:cyan;
+}
+span{
+  color:orange;
+}
+body{
+  background-image:url(homer.gif);
+  background-size: cover;
+}
