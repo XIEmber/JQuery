@@ -1,25 +1,14 @@
 @import url("reset.css");
-p{
-  text-align: Center;
-  font-size: 25px;
-  font-family: Impact;
-  color:pink;
-}
-h1{
-  text-align: Center;
-  font-size: 50px;
-  font-family: Impact;
-  color:pink;
-}
-span{
-  color:pink;
-  cursor:crosshair;
+
+header{
+  border-bottom: 15px pink solid;
+  background-color: pink;
 }
 body{
-  background-image:url("https://www.panicstudio.tv/assets-user/projects/69/290/Planet_Website.gif");
+  background-image:url("https://media0.giphy.com/media/vJPrhjj5X0eyY/giphy.gif");
   background-size: 100%;
   background-repeat: no-repeat;
-  background-color: black;
+  background-color: pink;
 }
 button{
 background-color:pink;

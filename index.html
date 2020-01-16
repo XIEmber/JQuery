@@ -6,8 +6,33 @@
     <title>Le Site de JQuery</title>
     <script src="./assets/js/Jquery.js"></script>
     <script src="./assets/js/jquery-ui.js"></script>
+    <script>
+      $(document).ready(function() {
+      $("ul.menu ul.sousmenu").hide();
+      $("ul.menu ul.sousmenu span").each(function() {
+        $(this).replaceWith('<a href="" title="Afficher">'
+          + $(this).text()
+          + '</a>');
+      })
+    });
+    </script>
   </head>
+<header>
+  <nav>
+    <ul class="menu">
+      <li><a href="#">That's gay</a></li>
+      <li><a href="#">That's also gay</a></li>
+        <li class="switchmenu"><span> you're Hella gay!</span>
+            <ul class="sousmenu">
+              <li><a href="#">Oh wait you're gay!</a></li>
+              <li><a href="#">you thought but you're still gay</a></li>
+              <li><a href="#">As gay as Mathieu</a></li>
+          </ul>
+        </li>
+    </ul>
+  </nav>
+</header>
   <body>
-    
+
   </body>
 </html>
